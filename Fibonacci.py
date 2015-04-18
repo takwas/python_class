@@ -85,7 +85,7 @@ def fib(upToN):
 		
 
 
-
+# This function will be called for the program to run
 def run():
 	from sys import argv
 	# 'argv' is a variable belonging to the the 'sys' module,
@@ -121,6 +121,8 @@ def run():
 		
 
 
-# Starting point of program
+# Starting point of the program
+# This portion of the code is required to avoid calling run
+# run() when the script is imported as a module instead
 if __name__ == '__main__':
 	run()
